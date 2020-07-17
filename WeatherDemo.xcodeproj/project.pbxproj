@@ -13,6 +13,7 @@
 		93DC97D924C22AA100D0A2B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93DC97D724C22AA100D0A2B1 /* Main.storyboard */; };
 		93DC97DB24C22AA300D0A2B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93DC97DA24C22AA300D0A2B1 /* Assets.xcassets */; };
 		93DC97DE24C22AA300D0A2B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93DC97DC24C22AA300D0A2B1 /* LaunchScreen.storyboard */; };
+		93DC97E624C2321100D0A2B1 /* WildCardGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DC97E524C2321100D0A2B1 /* WildCardGestureRecognizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		93DC97DA24C22AA300D0A2B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93DC97DD24C22AA300D0A2B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93DC97DF24C22AA300D0A2B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93DC97E524C2321100D0A2B1 /* WildCardGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WildCardGestureRecognizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				93DC97D124C22AA100D0A2B1 /* AppDelegate.swift */,
 				93DC97D324C22AA100D0A2B1 /* SceneDelegate.swift */,
 				93DC97D524C22AA100D0A2B1 /* ViewController.swift */,
+				93DC97E524C2321100D0A2B1 /* WildCardGestureRecognizer.swift */,
 				93DC97D724C22AA100D0A2B1 /* Main.storyboard */,
 				93DC97DA24C22AA300D0A2B1 /* Assets.xcassets */,
 				93DC97DC24C22AA300D0A2B1 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				93DC97D624C22AA100D0A2B1 /* ViewController.swift in Sources */,
 				93DC97D224C22AA100D0A2B1 /* AppDelegate.swift in Sources */,
 				93DC97D424C22AA100D0A2B1 /* SceneDelegate.swift in Sources */,
+				93DC97E624C2321100D0A2B1 /* WildCardGestureRecognizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
