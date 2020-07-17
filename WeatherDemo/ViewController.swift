@@ -64,6 +64,10 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
             timer?.invalidate()
             print("double tapped")
             self.firstTap = false
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+            vc.location = tappedLocation
+            self.present(vc, animated: true)
         } else {
             self.firstTap = true
             timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) { timer in

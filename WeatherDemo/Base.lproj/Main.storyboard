@@ -38,5 +38,58 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="135.9375"/>
         </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="7OA-bR-Tpt">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="3bo-pM-Jl7" customClass="DetailViewController" customModule="WeatherDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gTl-fy-7sQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="qAH-OY-0SE">
+                                <rect key="frame" x="82" y="81" width="250" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="MpH-ia-ERO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Temperature:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ac4-hg-0Fe">
+                                <rect key="frame" x="124.5" y="177" width="165" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="165" id="wli-uY-IKE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ueQ-9L-9IN">
+                                <rect key="frame" x="201.5" y="220" width="11" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ac4-hg-0Fe" firstAttribute="top" secondItem="qAH-OY-0SE" secondAttribute="bottom" constant="55" id="Je7-OA-dze"/>
+                            <constraint firstItem="ac4-hg-0Fe" firstAttribute="centerX" secondItem="kYW-hA-j8p" secondAttribute="centerX" id="QwY-Gh-Fl2"/>
+                            <constraint firstItem="qAH-OY-0SE" firstAttribute="centerX" secondItem="kYW-hA-j8p" secondAttribute="centerX" id="aIe-kc-zSt"/>
+                            <constraint firstItem="qAH-OY-0SE" firstAttribute="top" secondItem="kYW-hA-j8p" secondAttribute="top" constant="37" id="dfb-11-6kh"/>
+                            <constraint firstItem="ueQ-9L-9IN" firstAttribute="centerX" secondItem="ac4-hg-0Fe" secondAttribute="centerX" id="pBz-iA-NHv"/>
+                            <constraint firstItem="ueQ-9L-9IN" firstAttribute="top" secondItem="ac4-hg-0Fe" secondAttribute="bottom" constant="22" id="wcr-JE-sNs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kYW-hA-j8p"/>
+                    </view>
+                    <connections>
+                        <outlet property="currentTempLabel" destination="ueQ-9L-9IN" id="Qgn-1Q-tgX"/>
+                        <outlet property="locationName" destination="qAH-OY-0SE" id="Nzx-a4-yWH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fdu-BD-ZfA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="987" y="136"/>
+        </scene>
     </scenes>
 </document>
